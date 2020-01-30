@@ -73,3 +73,7 @@ const App: React.FC = () => {
 
 export default App;
 ```
+
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/assignar/react-aws-dashboard/master/images/screenshot.png?token=AJ2OJHXC4EBHF2TUH7FJ7IC6HO33K)
