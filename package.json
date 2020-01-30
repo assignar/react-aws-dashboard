@@ -1,0 +1,30 @@
+{
+  "name": "react-aws-dashboard",
+  "version": "1.0.0",
+  "description": "Switch Between AWS Accounts in Javascript",
+  "repository": "git@github.com:assignar/react-aws-dashboard.git",
+  "author": "c-py <craig@assignar.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^13.5.1",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-tabs": "^2.3.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "react-tabs": "^3.1.0"
+  }
+}
