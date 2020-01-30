@@ -11,6 +11,7 @@ yarn add react-aws-dashboard
 ## Example (with create-react-app)
 
 1. Create new react app and add react-aws-dashboard
+
 ```bash
 yarn create react-app my-app --template typescript
 cd my-app
@@ -42,7 +43,7 @@ const Sts: React.FC<StsProps> = ({ config }) => {
     };
     getIdentity();
   }, [config]);
-  return identity ? <pre>{JSON.stringify(identity)}</pre> : <></>;
+  return identity ? <p>{JSON.stringify(identity)}</p> : <></>;
 };
 
 const myCredentialsGetter = () => {
@@ -55,13 +56,13 @@ const myCredentialsGetter = () => {
 
 const environments = [
   { name: "Example", configFunction: myCredentialsGetter },
-  { name: "Example 2", configFunction: myCredentialsGetter },
+  { name: "Example 2", configFunction: myCredentialsGetter }
 ];
 
 const App: React.FC = () => {
   return (
     <Dashboard environments={environments}>
-      {(name, config) => (
+      {(name: string, config: AWS.Config) => (
         <>
           <Sts config={config} />
         </>
