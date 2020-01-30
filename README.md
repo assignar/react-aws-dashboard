@@ -1,6 +1,6 @@
 # react-aws-dashboard
 
-A React componenet which provides tabs to easily switch between AWS environments. This is completely client side and requires no backend to function.
+A React component which provides tabs to easily switch between AWS environments. This is completely client side and requires no backend to function.
 
 This componenet requires a single property, a list of environments. Each environment has a name attribute and a configFunction, which is a function that returns an [AWS.Config](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html) object.
 
