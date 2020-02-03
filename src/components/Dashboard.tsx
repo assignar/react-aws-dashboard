@@ -31,7 +31,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         ))}
       </TabList>
       {environments.map((env: EnvironmentModel) => (
-        <TabPanel>{children(env.name, env.configFunction(env.args))}</TabPanel>
+        <TabPanel>{children(env.name, env.configFunction(...env.args))}</TabPanel>
       ))}
     </Tabs>
   );
